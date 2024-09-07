@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMask 2 Digit Validation</title>
+    <script src="https://unpkg.com/imask"></script>
+</head>
+<body>
+    <form>
+        <label for="twoDigitNumber">Enter a 2-digit number:</label>
+        <input type="text" id="twoDigitNumber" />
+    </form>
+
+    <script>
+        const element = document.getElementById('twoDigitNumber');
+        const maskOptions = {
+        mask: '00',
+        lazy: false,
+        };
+        const mask = IMask(element, maskOptions);
+    </script>
+</body>
+</html>
